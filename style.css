@@ -80,12 +80,49 @@ body{
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  transition: .3s ease-in-out;
 }
 .c-button__image{
   width: 15px;
   height: 18px;
   margin-right: 8px;
 }
-.c-text__button{
-  
+.l-button:hover{
+  background-color: #184131;
+}
+@media screen and (max-width:375px) {
+  body{
+    height: auto;
+  }
+  .l-main{
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    min-height: 630px;
+  }
+  .c-image__hero-desktop{
+    min-width: 345px;
+    border-radius:16px 16px 0 0 ;
+  }
+  .l-content__wrapper{
+    padding: 24px;
+  }
+  .c-h2{
+    margin-bottom: 14px;
+  }
+  .c-h1{
+    margin-bottom: 20px;
+  }
+  .c-paragraph{
+    margin-bottom: 20px;
+  }
+  .l-price__-wrapper{
+    margin-bottom: 14px;
+  }
+  .c-price__bigger{
+    font-size: 24px;
+  }
+  .l-button{
+    padding: 8px auto;
+  }
 }
